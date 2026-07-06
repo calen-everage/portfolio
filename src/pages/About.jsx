@@ -13,8 +13,9 @@ export default function About() {
             circuit design and electronics. I also play guitar and produce music.
           </p>
           <p>
-            My experience includes extensive laboratory-focused coursework in analog ciruit design,
-            FPGA digital logic, analog and
+            My experience includes extensive laboratory-focused coursework in analog ciruit design, 
+            electronic amplifier topologies, FPGA digital logic, analog and digital signal processing, 
+            and power electronics.
           </p>
           <p>
             Check out my spotify page and reach out with any questions!
