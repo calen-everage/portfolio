@@ -209,6 +209,24 @@ h2 {
   text-decoration: underline;
 }
 
+/* ── Music ───────────────────────────────── */
+.music p {
+  color: var(--muted);
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.music-embed {
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
+.music-embed iframe {
+  display: block;
+}
+
 /* ── Contact ─────────────────────────────── */
 .contact > p {
   color: var(--muted);
@@ -239,6 +257,19 @@ h2 {
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--accent);
+}
+
+.form-status {
+  margin-top: -0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-status-success {
+  color: var(--accent);
+}
+
+.form-status-error {
+  color: #e05555;
 }
 
 .social-links {

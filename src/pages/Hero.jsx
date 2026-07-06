@@ -5,6 +5,7 @@ export default function Hero() {
       <p className="tagline">Electrical Engineering Student · UC Davis · Circuit Design</p>
       <div className="hero-actions">
         <a href="#projects" className="btn btn-primary">View My Work</a>
+        <a href="#music" className="btn btn-secondary">Check Out My Music</a>
         <a href="#contact" className="btn btn-secondary">Get In Touch</a>
       </div>
     </section>
