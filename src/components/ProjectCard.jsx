@@ -1,15 +1,17 @@
-export default function ProjectCard({ title, description, tech, liveUrl, repoUrl }) {
+import { Link } from 'react-router-dom'
+
+export default function ProjectCard({ title, description, tech, path, liveUrl, repoUrl }) {
   return (
-    <div className="project-card">
+    <Link to={path} className="project-card">
       <h3>{title}</h3>
       <p>{description}</p>
       <ul className="tech-list">
         {tech.map((t) => <li key={t}>{t}</li>)}
       </ul>
       <div className="card-links">
-        {liveUrl && <a href={liveUrl} target="_blank" rel="noreferrer">Live</a>}
-        {repoUrl && <a href={repoUrl} target="_blank" rel="noreferrer">GitHub</a>}
+        {liveUrl && <a href={liveUrl} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>Live</a>}
+        {repoUrl && <a href={repoUrl} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>GitHub</a>}
       </div>
-    </div>
+    </Link>
   )
 }

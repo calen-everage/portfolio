@@ -1,7 +1,10 @@
+import musicImg from '../assets/music.jpg'
+
 export default function Music() {
   return (
     <section id="music" className="music">
       <h2>Music</h2>
+      <img src={musicImg} alt="Music setup" className="music-photo" />
       <p>Outside of engineering, I write and produce music. Here's one of my favorites.</p>
       <div className="music-embed">
         <iframe
